@@ -4,8 +4,5 @@ __pycache__/
 .venv/
 venv/
 
-data/run_*/
-output/run_*/
-
 .env
 .env.*

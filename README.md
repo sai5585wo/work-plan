@@ -1,90 +1,149 @@
-# 跨境电商运营日报自动生成 MVP
+# Cross-Border E-Commerce AI Workflow Plan
 
-## 项目目标
+> 中文说明：这是一个面向跨境电商入行、副业验证和 AI 工作流能力建设的个人项目。  
+> 当前重点不是马上创业，也不是开发复杂系统，而是通过可展示的 MVP 和持续计划，逐步进入跨境电商真实业务场景。
 
-这是一个用于验证副业方向的最小 MVP：
+## Project Goal（项目目标）
 
-> 运营上传订单、库存、广告 Excel，工具自动生成每日运营日报，减少人工整理表格时间。
+长期目标：
 
-## 功能范围
+- Enter cross-border e-commerce industry（进入跨境电商行业）
+- Build AI workflow capability（建立 AI 工作流能力）
+- Create practical MVPs（做出可展示、可复用的最小作品）
+- Turn workflow ability into side income（逐步把工作流能力转化为副业收入）
+- Evaluate whether it can become a main business（未来评估是否主业化）
 
-- 读取 `orders.xlsx/csv`、`inventory.xlsx/csv`、`ads.xlsx/csv`
-- 校验必要字段
-- 计算经营概览
-- 生成库存预警
-- 计算广告 ROI
-- 输出 `运营日报.xlsx`，如果当前环境无法写入 xlsx，则自动降级输出 CSV
-- 输出 `日报总结.txt`
+当前阶段目标：
 
-## 项目结构
+> 做出一个能用于面试展示的跨境商品 Listing 半自动生成工作流，并围绕它学习飞书多维表格、Amazon Listing 基础和真实岗位需求。
+
+## Current MVP（当前 MVP）
+
+MVP 名称：
+
+> Cross-Border Product Listing Semi-Automated Workflow  
+> 跨境商品 Listing 半自动生成工作流
+
+当前流程：
+
+```mermaid
+flowchart LR
+    A["Input Product Info<br/>填写商品资料"] --> B["Generate Prompt<br/>飞书自动生成提示词"]
+    B --> C["Ask AI<br/>复制提示词给 ChatGPT/Gemini"]
+    C --> D["AI Output<br/>生成英文标题、五点描述、关键词、风险提示"]
+    D --> E["Manual Review<br/>人工检查和修改"]
+    E --> F["Save To Feishu<br/>回填飞书表格"]
+    F --> G["Interview Demo<br/>用于面试展示"]
+```
+
+当前已经完成：
+
+- 建立飞书多维表格。
+- 完成 6 条商品 Listing 样本。
+- 创建 `生成提示词` 公式字段。
+- 初步跑通“商品资料 -> AI 提示词 -> Listing 输出 -> 回填表格”的半自动流程。
+
+## Project Structure（项目结构）
 
 ```text
-crossborder-report-mvp/
-  data/run_时间戳/       输入Excel/CSV文件
-  output/run_时间戳/     输出日报文件
-  src/
-    create_sample_data.py
-    generate_report.py
-  requirements.txt
+work-plan/
   README.md
+  docs/
+    招聘信息.md
+  task-plans/
+    01-overall-roadmap.md
+    02-7-day-learning-plan.md
 ```
 
-## 运行方式
+目录说明：
 
-如果你本机已安装 Python：
+- `docs/`：存放市场信息、招聘信息、真实岗位需求等输入资料。
+- `task-plans/`：存放长期计划、短期计划和后续阶段计划。
+- `README.md`：项目入口，说明当前方向和文件结构。
 
-```powershell
-cd E:\Developer\work-plan\crossborder-report-mvp
-pip install -r requirements.txt
-python src\create_sample_data.py
-python src\generate_report.py
+## Main Documents（核心文档）
+
+- [01-overall-roadmap.md](task-plans/01-overall-roadmap.md)  
+  总体路线图，用于管理长期方向、阶段目标和关键决策。
+
+- [02-7-day-learning-plan.md](task-plans/02-7-day-learning-plan.md)  
+  7 天学习计划，用于把当前 MVP 升级成更适合面试展示的版本。
+
+- [招聘信息.md](docs/招聘信息.md)  
+  广州本地跨境电商 AI 自动化相关招聘样本和需求分析。
+
+## Current Strategy（当前策略）
+
+当前不建议直接做：
+
+- SaaS 产品
+- Python 自动化大项目
+- n8n / Make / API 集成
+- 高价企业咨询
+- AI 培训课程
+
+当前优先做：
+
+1. Polish the MVP（打磨当前 MVP）
+2. Learn Feishu workflow（学习飞书工作流）
+3. Learn Amazon Listing basics（学习 Amazon Listing 基础）
+4. Prepare an interview portfolio（准备面试作品展示）
+5. Enter real business scenarios（进入真实业务场景）
+
+## Decision Rule（决策规则）
+
+遇到新想法时，用这个规则判断：
+
+```mermaid
+flowchart TD
+    A["New Idea<br/>出现新想法"] --> B{"Help job entry?<br/>是否帮助入行？"}
+    B -- "Yes 是" --> C["Do first<br/>优先做"]
+    B -- "No 否" --> D{"Improve current MVP?<br/>是否提升当前 MVP？"}
+    D -- "Yes 是" --> E["Add to task plan<br/>加入任务计划"]
+    D -- "No 否" --> F{"Bring real feedback?<br/>是否带来真实反馈？"}
+    F -- "Yes 是" --> G["Small test<br/>小范围验证"]
+    F -- "No 否" --> H["Delay<br/>暂缓"]
 ```
 
-当前 Codex 环境可用运行方式：
+简单说：
 
-```powershell
-cd E:\Developer\work-plan\crossborder-report-mvp
-& 'C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' src\create_sample_data.py
-& 'C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' src\generate_report.py
+> 不能帮助入行、不能提升当前 MVP、不能带来真实反馈的事情，先不做。
+
+## Naming Rule（文件命名规则）
+
+计划文档采用：
+
+```text
+数字-英文名称.md
 ```
 
-说明：`create_sample_data.py` 每次会创建新的 `data/run_时间戳` 目录；`generate_report.py` 默认读取最新的数据目录，并输出到新的 `output/run_时间戳` 目录。
+示例：
 
-## 输入文件字段
+- `01-overall-roadmap.md`
+- `02-7-day-learning-plan.md`
+- `03-interview-preparation.md`
+- `04-30-day-action-plan.md`
 
-### orders.xlsx / orders.csv
+规则：
 
-| 字段 | 说明 |
-|---|---|
-| 订单号 | 唯一订单编号 |
-| 日期 | 订单日期 |
-| SKU | 商品SKU |
-| 产品名 | 商品名称 |
-| 销售额 | 订单销售额 |
-| 数量 | 销售数量 |
-| 平台 | Temu/TikTok/Amazon等 |
+- `01` 永远放总体方案。
+- 后续计划按执行顺序递增。
+- 文件名用英文，内容可以中英结合。
+- 重要文档尽量加入流程图或示意图。
 
-### inventory.xlsx / inventory.csv
+## Review Rhythm（复盘节奏）
 
-| 字段 | 说明 |
-|---|---|
-| SKU | 商品SKU |
-| 产品名 | 商品名称 |
-| 当前库存 | 当前库存数量 |
-| 安全库存 | 低于或等于该值时触发预警 |
+每周复盘：
 
-### ads.xlsx / ads.csv
+- What did I finish?（我完成了什么？）
+- What did I learn?（我学到了什么？）
+- What blocked me?（我卡在哪里？）
+- What should I do next week?（下周做什么？）
 
-| 字段 | 说明 |
-|---|---|
-| 日期 | 广告日期 |
-| SKU | 商品SKU |
-| 广告花费 | 当日广告支出 |
-| 广告销售额 | 广告带来的销售额 |
+每月更新：
 
-## 下一步优化
-
-1. 支持客户自定义字段映射。
-2. 接入飞书多维表格。
-3. 增加日报自动发送到飞书群。
-4. 增加异常趋势分析。
+- 总体路线是否需要调整？
+- 当前 MVP 是否需要升级？
+- 是否开始投递或面试？
+- 是否出现真实业务机会？
+- 是否需要新增计划文档？
