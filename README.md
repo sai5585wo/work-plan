@@ -1,47 +1,55 @@
-# Cross-Border E-Commerce AI Workflow Plan
+# Cross-Border E-Commerce ERP/Data Workflow Plan
 
-> 中文说明：这是一个面向跨境电商入行、副业验证和 AI 工作流能力建设的个人项目。  
-> 当前重点不是马上创业，也不是开发复杂系统，而是通过可展示的 MVP 和持续计划，逐步进入跨境电商真实业务场景。
+> 中文说明：这是一个面向跨境电商数据/ERP/表格流程支持、副业验证和工作流能力建设的个人项目。  
+> 当前重点不是继续包装 Listing 小工具，而是转向更接近真实岗位和付费需求的商品、订单、库存、补货、异常和报表流程。
 
 ## Project Goal（项目目标）
 
 长期目标：
 
-- Enter cross-border e-commerce industry（进入跨境电商行业）
-- Build AI workflow capability（建立 AI 工作流能力）
-- Create practical MVPs（做出可展示、可复用的最小作品）
-- Turn workflow ability into side income（逐步把工作流能力转化为副业收入）
+- Build ERP/data workflow capability（建立 ERP/数据流程能力）
+- Understand cross-border e-commerce operations（理解跨境电商真实业务）
+- Create practical workflow simulations（做出可展示、可复用的流程作品）
+- Validate table/ERP cleanup service（验证表格/ERP整理服务）
 - Evaluate whether it can become a main business（未来评估是否主业化）
 
 当前阶段目标：
 
-> 做出一个能用于面试展示的跨境商品 Listing 半自动生成工作流，并围绕它学习飞书多维表格、Amazon Listing 基础和真实岗位需求。
+> 做出一个更接近真实岗位需求的跨境电商 ERP 流程模拟工作台，并用招聘 JD 反推企业在商品、订单、库存、补货和报表上的痛点。
 
-## Current MVP（当前 MVP）
+## Current Portfolio Direction（当前作品方向）
 
-MVP 名称：
+已完成入门作品：
 
 > Cross-Border Product Listing Semi-Automated Workflow  
 > 跨境商品 Listing 半自动生成工作流
 
-当前流程：
+当前定位：
+
+> 该作品用于证明飞书基础、字段设计和流程意识，但不再作为就业或副业竞争力核心。
+
+下一阶段重点作品：
+
+> Cross-Border ERP Workflow Simulation  
+> 跨境电商 ERP 流程模拟工作台
+
+目标流程：
 
 ```mermaid
 flowchart LR
-    A["Input Product Info<br/>填写商品资料"] --> B["Generate Prompt<br/>飞书自动生成提示词"]
-    B --> C["Ask AI<br/>复制提示词给 ChatGPT/Gemini"]
-    C --> D["AI Output<br/>生成英文标题、五点描述、关键词、风险提示"]
-    D --> E["Manual Review<br/>人工检查和修改"]
-    E --> F["Save To Feishu<br/>回填飞书表格"]
-    F --> G["Interview Demo<br/>用于面试展示"]
+    A["Product Data<br/>商品资料"] --> B["Orders<br/>订单记录"]
+    B --> C["Inventory<br/>库存变化"]
+    C --> D["Inventory Alert<br/>库存预警"]
+    D --> E["Replenishment Task<br/>补货任务"]
+    E --> F["Status Tracking<br/>状态跟踪"]
 ```
 
 当前已经完成：
 
-- 建立飞书多维表格。
-- 完成 6 条商品 Listing 样本。
-- 创建 `生成提示词` 公式字段。
-- 初步跑通“商品资料 -> AI 提示词 -> Listing 输出 -> 回填表格”的半自动流程。
+- 完成 Listing 入门工作流。
+- 完成飞书视图、表单、状态流转练习。
+- 明确 Listing 小工具竞争力不足。
+- 新策略转向 ERP/表格流程支持和副业服务验证。
 
 ## Project Structure（项目结构）
 
@@ -49,10 +57,12 @@ flowchart LR
 work-plan/
   README.md
   docs/
+    个人简历.md
     招聘信息.md
   task-plans/
     01-overall-roadmap.md
-    02-7-day-learning-plan.md
+    02-3-day-feishu-workflow-practice.md
+    03-erp-workflow-simulation-plan.md
 ```
 
 目录说明：
@@ -66,11 +76,17 @@ work-plan/
 - [01-overall-roadmap.md](task-plans/01-overall-roadmap.md)  
   总体路线图，用于管理长期方向、阶段目标和关键决策。
 
-- [02-7-day-learning-plan.md](task-plans/02-7-day-learning-plan.md)  
-  7 天学习计划，用于把当前 MVP 升级成更适合面试展示的版本。
+- [02-3-day-feishu-workflow-practice.md](task-plans/02-3-day-feishu-workflow-practice.md)  
+  3 天飞书工作流练习计划，用于把当前 MVP 训练成更完整的小型工作流。
+
+- [03-erp-workflow-simulation-plan.md](task-plans/03-erp-workflow-simulation-plan.md)  
+  5 天 ERP 流程模拟计划，用于搭建更接近真实岗位需求的商品、订单、库存、补货和异常管理作品。
 
 - [招聘信息.md](docs/招聘信息.md)  
-  广州本地跨境电商 AI 自动化相关招聘样本和需求分析。
+  广州本地跨境电商招聘样本、JD 反推记录和 ERP/表格痛点分析。
+
+- [个人简历.md](docs/个人简历.md)  
+  数据/ERP/表格流程支持方向的长期维护简历。
 
 ## Current Strategy（当前策略）
 
@@ -84,10 +100,10 @@ work-plan/
 
 当前优先做：
 
-1. Polish the MVP（打磨当前 MVP）
-2. Learn Feishu workflow（学习飞书工作流）
-3. Learn Amazon Listing basics（学习 Amazon Listing 基础）
-4. Prepare an interview portfolio（准备面试作品展示）
+1. Build ERP workflow simulation（搭建 ERP 流程模拟作品）
+2. Analyze job descriptions（分析招聘 JD）
+3. Package table/ERP cleanup service（整理表格/ERP服务包）
+4. Validate demand before selling automation（先验证需求，再谈自动化）
 5. Enter real business scenarios（进入真实业务场景）
 
 ## Decision Rule（决策规则）
@@ -120,8 +136,8 @@ flowchart TD
 示例：
 
 - `01-overall-roadmap.md`
-- `02-7-day-learning-plan.md`
-- `03-interview-preparation.md`
+- `02-3-day-feishu-workflow-practice.md`
+- `03-erp-workflow-simulation-plan.md`
 - `04-30-day-action-plan.md`
 
 规则：

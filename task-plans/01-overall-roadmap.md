@@ -1,233 +1,201 @@
-# Overall Roadmap: Cross-Border E-Commerce AI Workflow Career Plan
+# Overall Roadmap: Cross-Border E-Commerce ERP/Data Workflow Plan
 
-> 中文说明：这是你的长期总体计划文档。它不是一次写死的计划，而是后续会根据你的学习进度、求职情况、MVP 结果和真实市场反馈持续更新的主文档。  
-> 使用方式：先看总体路线，再看具体阶段任务。短期计划放在独立文件里，例如 `02-7-day-learning-plan.md`。
+> 中文说明：这是长期总体计划文档。它会根据学习进度、作品质量、招聘 JD 和真实市场反馈持续更新。  
+> 当前关键判断：Listing 半自动工作流只是入门练习，不能作为就业或副业竞争力核心。下一阶段转向更接近真实岗位和付费需求的 ERP/表格流程支持。
 
 ## Current Position（当前位置）
 
-你当前不是在做完整创业项目，而是在做一个更现实的过渡路线：
-
-> 先进入跨境电商相关场景，理解业务流程，再用 AI、飞书多维表格、自动化工具做效率提升，最后逐步发展成副业或主业。
-
 当前已经完成：
 
-- Built a Feishu Base（已建立飞书多维表格）
-- Created 6 product samples（已完成 6 条商品样本）
-- Created a generated prompt formula（已完成“生成提示词”公式字段）
-- Built a semi-automated Listing workflow MVP（已完成半自动 Listing 工作流 MVP）
+- [x] Built a Feishu Base（已建立飞书多维表格）
+- [x] Built a Listing prompt workflow（已完成 Listing 提示词工作流）
+- [x] Created workflow views and form（已完成视图、表单、基础状态流程）
+- [x] Completed `02-3-day-feishu-workflow-practice.md`
 
-当前阶段判断：
+当前重新判断：
 
-> 你已经从“想法阶段”进入“作品雏形阶段”。下一步不是盲目学更多工具，而是把这个 MVP 包装成可展示、可复盘、可面试表达的作品。
+> 飞书 Listing 工作流能证明学习能力和流程意识，但不足以支撑找工作或接副业单。下一步必须转向更硬的业务对象：商品、订单、库存、补货、异常、报表。
 
 ## Main Goal（总体目标）
 
 长期目标：
 
-- Build income ability（建立赚钱能力）
-- Enter cross-border e-commerce industry（进入跨境电商行业）
-- Build AI workflow capability（建立 AI 工作流能力）
-- Turn side projects into real income（把副业项目变成真实收入）
-- Clarify personal direction（逐步明确人生目标）
+- [ ] Build ERP/data workflow capability（建立 ERP/数据流程能力）
+- [ ] Understand real cross-border operations（理解真实跨境电商业务）
+- [ ] Validate table/ERP organization service（验证表格/ERP整理服务）
+- [ ] Build income ability through practical services（用实用服务建立赚钱能力）
+- [ ] Decide whether this can become a side business or main business（评估副业/主业化可能）
 
-更现实的阶段性目标：
+阶段目标：
 
 ```text
-0-3 个月：做出作品，理解基础业务，开始投递相关岗位
-3-6 个月：进入跨境电商相关岗位或接近真实业务场景
-6-12 个月：在真实业务里做出 1-2 个内部效率工具
-12-18 个月：用真实案例尝试第一个外部小单
-18-36 个月：积累客户、模板和行业经验，评估是否主业化
+0-1 个月：做出 ERP 流程模拟作品，完成 JD 反推分析
+1-3 个月：验证表格/ERP整理服务包，接触真实公司需求
+3-6 个月：进入数据/ERP/运营支持岗位，或拿到第一个低价试点
+6-12 个月：沉淀 1-2 个真实案例，形成可复用模板
+12 个月后：评估是否扩大为稳定副业服务
 ```
 
 ## Strategy（核心策略）
 
-你的策略不是“马上创业”，而是：
+当前策略：
 
-1. Learn by building（通过做作品学习）
-2. Enter the industry first（先进入行业）
-3. Solve small workflow problems（先解决小流程问题）
-4. Build reusable templates（沉淀可复用模板）
-5. Convert internal cases into external services（把内部案例转成外部服务）
+- [x] Learn by building（通过做作品学习）
+- [ ] Build ERP workflow simulation（搭建 ERP 流程模拟作品）
+- [ ] Analyze JD pain points（从招聘 JD 反推企业痛点）
+- [ ] Package a table/ERP cleanup service（包装表格/ERP整理服务）
+- [ ] Test demand before selling automation（先验证需求，再谈自动化）
 
-不建议当前立刻做：
+不再采用的策略：
 
-- SaaS 产品
-- 复杂代码系统
-- Python 自动化大项目
-- n8n / Make / API 集成
-- AI 培训课程
-- 高价企业咨询
-
-原因：
-
-> 你目前最缺的是行业场景、真实客户问题和可验证案例。技术可以慢慢补，但场景必须先靠近。
+- 不把 Listing MVP 当作核心竞争力。
+- 不先包装面试话术来掩盖能力不足。
+- 不直接卖“AI自动化”这种大而空的服务。
+- 不马上学 Python、API、n8n、Make。
 
 ## Roadmap Flow（总体路线图）
 
 ```mermaid
 flowchart TD
-    A["Current State<br/>当前状态：零基础起步，已做出 Listing MVP"] --> B["MVP Portfolio<br/>作品集：飞书 Listing 半自动工作流"]
-    B --> C["Interview Preparation<br/>面试准备：能讲清楚流程和价值"]
-    C --> D["Entry Job<br/>入行岗位：运营助理/数据助理/刊登专员/ERP 文员"]
-    D --> E["Real Business Process<br/>真实业务：上架、报表、客服、库存、ERP"]
-    E --> F["Internal Workflow Tool<br/>内部效率工具：帮同事节省时间"]
-    F --> G["Case Study<br/>案例沉淀：前后对比、节省时间、使用反馈"]
-    G --> H["Side Project<br/>副业小单：低价试点，交付具体流程"]
-    H --> I["Service Package<br/>服务产品化：模板、报价、交付边界"]
-    I --> J["Main Business Evaluation<br/>主业化评估：收入稳定后再决定"]
+    A["Completed Listing MVP<br/>已完成 Listing 入门作品"] --> B["Reality Check<br/>确认竞争力不足"]
+    B --> C["ERP Workflow Simulation<br/>ERP 流程模拟作品"]
+    C --> D["JD Pain Point Analysis<br/>招聘 JD 痛点反推"]
+    D --> E["Service Package<br/>表格/ERP整理服务包"]
+    E --> F["Mock Client Cases<br/>按 5 家公司模拟适配"]
+    F --> G["Real Validation<br/>真实需求验证"]
+    G --> H["Job or Pilot Project<br/>岗位切入或低价试点"]
+    H --> I["Case Study<br/>案例沉淀"]
+    I --> J["Side Business Evaluation<br/>副业化评估"]
 ```
 
-## Current MVP（当前 MVP）
+## Current Portfolio（当前作品定位）
 
-MVP 名称：
+### 已完成：Listing 半自动工作流
 
-> Cross-Border Product Listing Semi-Automated Workflow  
-> 跨境商品 Listing 半自动生成工作流
+定位：
 
-当前流程：
+> 入门练习作品，用来证明飞书基础、字段意识、流程意识和 AI 提示词工作流理解。
 
-```mermaid
-flowchart LR
-    A["Input Product Info<br/>填写商品资料"] --> B["Generate Prompt<br/>飞书自动生成提示词"]
-    B --> C["Ask AI<br/>复制提示词给 ChatGPT/Gemini"]
-    C --> D["AI Output<br/>生成英文标题、五点描述、关键词、风险提示"]
-    D --> E["Manual Review<br/>人工检查和修改"]
-    E --> F["Save To Feishu<br/>回填飞书表格"]
-    F --> G["Demo View<br/>用于面试展示"]
+不再包装为：
+
+> 能直接带来就业竞争力的核心作品。
+
+### 下一作品：Cross-Border ERP Workflow Simulation
+
+中文名称：
+
+> 跨境电商 ERP 流程模拟工作台
+
+核心流程：
+
+```text
+商品资料 -> 订单记录 -> 库存变化 -> 库存预警 -> 补货任务 -> 状态跟踪
 ```
 
-这个 MVP 的价值：
+最小模块：
 
-- 证明你能把重复工作拆成流程。
-- 证明你能用表格承载业务数据。
-- 证明你理解 AI 不是聊天，而是工作流的一部分。
-- 可以作为求职作品展示。
+- 商品资料表
+- 订单记录表
+- 库存表
+- 补货/采购表
+- 异常记录表
+- 库存预警/待处理看板
 
-当前不足：
+## Job and Service Direction（岗位与服务方向）
 
-- 还没有真实企业反馈。
-- 还没有接入自动回填。
-- 还没有真实平台运营经验。
-- Listing 质量还需要通过真实 Amazon 页面学习校准。
+优先岗位：
 
-## Job Direction（求职方向）
+- 数据/ERP 文员
+- 运营数据助理
+- 商品资料/订单库存支持
+- ERP 操作助理
+- 运营流程支持
+- 跨境电商运营助理
 
-你优先找这些岗位：
+副业验证服务：
 
-- Cross-border e-commerce operation assistant（跨境电商运营助理）
-- Listing assistant / Product listing specialist（商品刊登助理/专员）
-- Operation data assistant（运营数据助理）
-- ERP operation clerk（ERP 操作文员）
-- Product information assistant（商品资料助理）
-- Customer service quality review assistant（客服质检/售后流程支持）
-- Supply chain / purchasing assistant（供应链/采购/跟单助理）
+> 跨境电商商品/订单/库存表格整理服务
 
-不建议一开始主攻：
+第一版服务包：
 
-- AI automation engineer（AI 自动化工程师）
-- Machine learning engineer（机器学习工程师）
-- Full-stack developer（全栈开发）
-- Senior Amazon operator（高级 Amazon 运营）
-
-原因：
-
-> 这些岗位对技术、经验或业务理解要求更高。你现在更适合先拿到业务入口，再用自动化能力形成差异化。
+- 整理商品 SKU 表
+- 整理订单/库存 Excel
+- 建立飞书多维表格
+- 设置基础状态字段
+- 做 2-3 个视图：待处理、库存预警、已完成
+- 输出简单操作说明
 
 ## Skill Path（技能路线）
 
-技能优先级：
-
 ```mermaid
 flowchart TD
-    A["Level 1<br/>Feishu Base + Excel<br/>飞书多维表格 + Excel"] --> B["Level 2<br/>AI Prompt Workflow<br/>AI 提示词工作流"]
-    B --> C["Level 3<br/>Amazon Listing Basics<br/>Listing 基础"]
-    C --> D["Level 4<br/>Feishu Form + Automation<br/>飞书表单 + 自动化"]
-    D --> E["Level 5<br/>RPA Basics<br/>影刀/RPA 基础"]
-    E --> F["Level 6<br/>Python / API<br/>代码和接口"]
+    A["Level 1<br/>Feishu Base + Excel<br/>飞书多维表格 + Excel"] --> B["Level 2<br/>SKU / Order / Inventory<br/>商品、订单、库存结构"]
+    B --> C["Level 3<br/>ERP Workflow Simulation<br/>ERP 流程模拟"]
+    C --> D["Level 4<br/>Dashboard and Exception Tracking<br/>看板与异常跟踪"]
+    D --> E["Level 5<br/>RPA / API after validation<br/>验证后再学 RPA/API"]
 ```
 
 当前只重点学习：
 
-- Feishu Base（飞书多维表格）
-- Views（视图）
-- Form（表单）
-- Automation（自动化）
-- Amazon Listing structure（Amazon Listing 结构）
-- Risk words（风险词）
+- SKU、订单、库存、补货这些基础业务对象
+- 飞书多维表格关系、视图、表单、状态字段
+- Excel/表格清洗思维
+- JD 痛点分析
 
 暂时不学：
 
 - Python
-- n8n
-- Make
 - API
+- n8n / Make
 - SaaS
+- 高价自动化交付
 
 ## Decision Rules（决策规则）
 
-当你不知道下一步该做什么时，用这个判断：
-
 ```mermaid
 flowchart TD
-    A["New Idea<br/>出现新想法"] --> B{"Does it help job entry?<br/>是否帮助入行？"}
-    B -- "Yes 是" --> C["Do it first<br/>优先做"]
-    B -- "No 否" --> D{"Does it improve current MVP?<br/>是否提升当前 MVP？"}
-    D -- "Yes 是" --> E["Add to task plan<br/>加入短期计划"]
-    D -- "No 否" --> F{"Does it bring real customer feedback?<br/>是否带来真实客户反馈？"}
-    F -- "Yes 是" --> G["Test carefully<br/>小范围验证"]
-    F -- "No 否" --> H["Delay<br/>暂缓，不做"]
+    A["New Task<br/>新任务"] --> B{"Related to ERP/data workflow?<br/>是否关联 ERP/数据流程？"}
+    B -- "Yes 是" --> C["Do or plan<br/>执行或规划"]
+    B -- "No 否" --> D{"Can validate real demand?<br/>是否能验证真实需求？"}
+    D -- "Yes 是" --> E["Small test<br/>小范围验证"]
+    D -- "No 否" --> F["Delay<br/>暂缓"]
 ```
-
-简单说：
-
-> 不能帮助入行、不能提升 MVP、不能带来真实反馈的事情，先不做。
 
 ## 30-Day Direction（三十天方向）
 
-未来 30 天只做三件事：
+1. [ ] Build ERP workflow simulation（搭建 ERP 流程模拟作品）
+   - 商品资料、订单、库存、补货、异常、看板
 
-1. Polish the MVP（打磨当前 MVP）
-   - 整理视图
-   - 添加表单
-   - 添加状态流转
-   - 做好面试展示视图
+2. [ ] Analyze 20 job descriptions（分析 20 条招聘 JD）
+   - 记录 ERP、库存、订单、商品资料、报表、飞书/Excel 要求
 
-2. Learn Amazon Listing basics（学习 Listing 基础）
-   - 看 10-20 个真实 Amazon 页面
-   - 记录标题结构、五点描述、风险词
-   - 优化你的提示词模板
-
-3. Prepare for job entry（准备入行）
-   - 整理求职介绍
-   - 准备作品展示话术
-   - 收集广州/番禺/白云/海珠相关岗位
-   - 每周复盘岗位需求
+3. [ ] Package table/ERP cleanup service（整理表格/ERP服务包）
+   - 形成 1 页服务说明和 5 个模拟客户适配案例
 
 ## Review Schedule（复盘节奏）
 
 每周复盘一次：
 
-- What did I finish?（我完成了什么？）
-- What did I learn?（我学到了什么？）
-- What blocked me?（我卡在哪里？）
-- What should I do next week?（下周做什么？）
+- [ ] 本周是否推进 ERP 流程作品？
+- [ ] 是否新增 JD 反推记录？
+- [ ] 是否更清楚真实岗位需要什么？
+- [ ] 是否出现可以验证服务的真实机会？
 
-每月更新一次总体计划：
+每月更新一次：
 
-- 是否继续当前方向？
-- 是否需要调整求职岗位？
-- MVP 是否需要升级？
-- 是否出现真实业务机会？
-- 是否应该开始接触企业或招聘者？
+- [ ] 是否继续 ERP/数据支持方向？
+- [ ] 是否需要开始投递岗位？
+- [ ] 是否可以接触真实小卖家？
+- [ ] 是否需要学习新工具？
 
 ## Update Log（更新记录）
 
 ### 2026-06-06
 
-- Created this overall roadmap.
-- Confirmed current direction:
-  - Build MVP first.
-  - Learn Feishu workflow and Amazon Listing basics.
-  - Use the MVP as an entry-level portfolio.
-  - Avoid over-learning technical tools too early.
+- Created the initial overall roadmap.
+
+### 2026-06-07
+
+- Completed `02-3-day-feishu-workflow-practice.md`.
+- Repositioned Listing workflow as an entry-level practice project.
+- Changed strategy to ERP/data workflow support and table cleanup service validation.
