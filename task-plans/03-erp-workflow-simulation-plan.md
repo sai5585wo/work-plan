@@ -2,14 +2,18 @@
 
 > 中文说明：这份计划用于搭建一个更接近真实岗位需求的跨境电商 ERP 流程模拟作品。  
 > 每天投入：约 4 小时。  
-> 工具限制：优先使用飞书多维表格，不使用 Python、API、n8n、Make。  
-> 目标：从 Listing 小工具升级到商品、订单、库存、补货、异常和看板的业务流程作品。
+> 工具限制：本阶段优先使用飞书多维表格，不使用 Python、API、n8n、Make。  
+> 目标：从 Listing 小工具升级到商品、订单、库存、补货、异常和看板的业务流程作品，并作为 AI 自动化工程师求职作品集的第一阶段案例。
 
 ## Goal（目标）
 
 Build a Feishu-based ERP workflow simulation for cross-border e-commerce.
 
 中文解释：用飞书多维表格模拟一个小型跨境电商 ERP 工作台，展示你对商品资料、订单、库存、补货和异常管理的理解。
+
+求职定位：
+
+> 这不是最终的 AI 自动化作品，而是 AI 自动化工程师作品集的业务流程基础。后续会基于该工作台和 mock CSV 数据继续扩展 Python/Pandas 数据清洗、RPA/低代码流程和 AI 工作流。
 
 完成后应具备：
 
@@ -29,13 +33,13 @@ Build a Feishu-based ERP workflow simulation for cross-border e-commerce.
 - [x] Day 2: Product and Order Tables（商品与订单表）
 - [x] Day 3: Inventory and Replenishment Flow（库存与补货流程）
 - [x] Day 4: Exception Tracking and Views（异常跟踪与视图）
-- [ ] Day 5: Dashboard, Service Package, and Review（看板、服务包与复盘，暂停）
+- [ ] Day 5: Dashboard, Portfolio Package, and Review（看板、求职作品包装与复盘，进行中）
 
 ## Current Status（当前状态）
 
 Current stage（当前阶段）：
 
-> Day 5: Dashboard, Service Package, and Review（看板、服务包与复盘，暂停）
+> Day 5: Dashboard, Portfolio Package, and Review（看板、求职作品包装与复盘，进行中）
 
 已完成：
 
@@ -66,9 +70,10 @@ SKU = 匹配字段，用于连接商品、订单、库存、补货和异常。
 
 下一步：
 
-- 暂停 Day 5，后续再进入看板、作品说明、服务包和复盘。
-- Day 5 启动后，先整理 ERP 工作台作品说明，再设计汇总看板。
-- 继续保持限制：不引入 Python、API、n8n、Make 或复杂自动化。
+- 完成 ERP 工作台作品说明，并明确其服务于 AI 自动化工程师求职方向。
+- 设计一个简洁总览看板，用于展示待处理订单、库存预警、待补货任务和待处理异常。
+- 梳理下一阶段能力路线：Python/Pandas 数据清洗、RPA/低代码流程、AI 工作流。
+- 继续保持限制：本阶段不引入 Python、API、n8n、Make 或复杂自动化；这些能力放到下一阶段按业务场景补齐。
 
 ## Day 1: Data Model and Field Design（数据模型与字段设计）
 
@@ -199,51 +204,52 @@ Output（产出）：
 
 一个能看出运营优先级的 ERP 流程模拟工作台。
 
-## Day 5: Dashboard, Service Package, and Review（看板、服务包与复盘）
+## Day 5: Dashboard, Portfolio Package, and Review（看板、求职作品包装与复盘）
 
-Focus（重点）：把作品转化为可展示、可验证的服务雏形。
+Focus（重点）：把作品转化为可展示、可面试讲解、可继续扩展自动化能力的求职作品。
 
 Time Plan（4 小时）：
 
 - 1h：整理一个简单看板或汇总视图。
-- 1h：写作品说明，讲清楚业务流程和价值。
-- 1h：写第一版服务说明：跨境电商商品/订单/库存表格整理服务。
-- 1h：复盘作品不足，列出下一步验证动作。
+- 1h：写作品说明，讲清楚业务流程、岗位价值和 AI 自动化扩展方向。
+- 1h：写面试讲解话术：为什么先做 ERP 流程，再做 Python/RPA/AI 自动化。
+- 1h：复盘作品不足，列出下一阶段能力补齐动作。
 
-Service Package（第一版服务包）：
+Portfolio Package（求职作品包装）：
 
 ```text
-跨境电商商品/订单/库存表格整理服务
+AI 自动化工程师求职作品：跨境电商 ERP 流程模拟工作台
 
 交付内容：
-1. 整理商品 SKU 表
-2. 整理订单/库存 Excel
-3. 建立飞书多维表格
-4. 设置基础状态字段
-5. 创建待处理、库存预警、已完成等视图
-6. 输出简单操作说明
+1. 飞书 ERP 流程模拟工作台
+2. 商品、订单、库存、补货、异常 5 张数据表
+3. 库存预警、待补货、待处理订单、异常处理 4 个关键视图
+4. mock CSV 数据目录
+5. 作品说明文档
+6. 后续 Python/Pandas、RPA、AI 工作流扩展路线
 ```
 
 Output（产出）：
 
-一个可展示 ERP 流程作品 + 一页副业服务说明草稿。
+一个可展示、可讲解、可继续扩展自动化能力的 AI 自动化工程师求职作品。
 
 ## Acceptance Criteria（完成标准）
 
 - 至少 5 张表：商品、订单、库存、补货、异常。
 - 至少 4 个关键视图：库存预警、待处理订单、待补货、异常处理。
 - 所有核心流程围绕 SKU 串联。
-- 能讲清楚：这个作品解决什么问题、谁会用、下一步如何服务真实小卖家。
+- 能讲清楚：这个作品解决什么问题、谁会用、为什么对 AI 自动化工程师岗位有价值。
+- 能讲清楚：下一步如何从飞书 ERP 流程扩展到 Python/Pandas、RPA 和 AI 工作流。
 - 不引入代码和复杂自动化。
 
 ## Do Not Do Yet（暂时不要做）
 
-- 不做 API 接入。
-- 不做 RPA 自动点击。
-- 不写 Python。
+- 本阶段不做 API 接入。
+- 本阶段不做 RPA 自动点击。
+- 本阶段不写 Python。
 - 不承诺真实库存自动扣减。
 - 不卖高价自动化项目。
 
 原因：
 
-> 当前目标是用低成本方式证明你理解 ERP/表格流程，而不是证明你会复杂技术。
+> 当前目标是先证明你理解跨境电商 ERP/表格流程。复杂技术不是不学，而是放到下一阶段基于这个业务场景继续补齐。
