@@ -33,13 +33,13 @@ Build a Feishu-based ERP workflow simulation for cross-border e-commerce.
 - [x] Day 2: Product and Order Tables（商品与订单表）
 - [x] Day 3: Inventory and Replenishment Flow（库存与补货流程）
 - [x] Day 4: Exception Tracking and Views（异常跟踪与视图）
-- [ ] Day 5: Dashboard, Portfolio Package, and Review（看板、求职作品包装与复盘，进行中）
+- [x] Day 5: Dashboard, Portfolio Package, and Review（看板、求职作品包装与复盘）
 
 ## Current Status（当前状态）
 
 Current stage（当前阶段）：
 
-> Day 5: Dashboard, Portfolio Package, and Review（看板、求职作品包装与复盘，进行中）
+> Completed: Cross-Border ERP Workflow Simulation（跨境电商 ERP 流程模拟工作台已完成）
 
 已完成：
 
@@ -59,6 +59,13 @@ Current stage（当前阶段）：
 - 已创建 `待处理订单视图`，筛选 `待处理` 和 `异常` 状态订单。
 - 已创建 `库存预警视图`，筛选 `低库存` 和 `缺货` 状态 SKU。
 - 已确认 4 个关键视图均能正确服务业务处理：库存预警、待补货 SKU、待处理订单、异常处理。
+- 已进入左侧 `仪表盘`，新增总览看板组件。
+- 仪表盘已包含 4 个核心数字卡片：待处理订单数量、库存预警 SKU 数量、待补货任务数量、待处理异常数量。
+- 仪表盘已新增 `待处理异常明细` 表格组件，用于展示异常编号、SKU、产品名、异常类型、异常描述和影响订单号。
+- 仪表盘已补齐 4 个明细组件：`待处理订单明细`、`库存预警明细`、`待补货任务明细`、`待处理异常明细`。
+- 已确认仪表盘不放作品说明文本，保持真实业务系统风格；作品说明统一放在 `docs/erp-workflow-portfolio.md`。
+- 已形成作品包装文档：`docs/erp-workflow-portfolio.md`。
+- 已形成下一阶段路线：`task-plans/04-ai-automation-engineer-roadmap.md`。
 
 当前关键理解：
 
@@ -68,12 +75,12 @@ SKU = 匹配字段，用于连接商品、订单、库存、补货和异常。
 关联记录 = 可用于更复杂关系，但现阶段不作为主流程。
 ```
 
-下一步：
+完成结论：
 
-- 完成 ERP 工作台作品说明，并明确其服务于 AI 自动化工程师求职方向。
-- 设计一个简洁总览看板，用于展示待处理订单、库存预警、待补货任务和待处理异常。
-- 梳理下一阶段能力路线：Python/Pandas 数据清洗、RPA/低代码流程、AI 工作流。
-- 继续保持限制：本阶段不引入 Python、API、n8n、Make 或复杂自动化；这些能力放到下一阶段按业务场景补齐。
+- 本计划已完成，当前作品可以作为 AI 自动化工程师求职作品集的第一阶段案例。
+- 后续不继续在本计划中扩展功能，避免无意义堆字段和堆组件。
+- 下一阶段进入 `04-ai-automation-engineer-roadmap.md`，重点补齐 Python/Pandas 数据清洗、RPA/低代码流程和 AI 工作流。
+- 继续保持边界：本作品是业务流程基础，不包装成完整 ERP 系统，也不承诺真实库存自动扣减。
 
 ## Day 1: Data Model and Field Design（数据模型与字段设计）
 
