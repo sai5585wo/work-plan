@@ -24,9 +24,10 @@ graph TD
 
 - Listing 入门工作流
 - 飞书多维表格基础练习
-- 跨境电商 ERP 流程模拟 Day 1-Day 4
+- 跨境电商 ERP 流程模拟 Day 1-Day 5
 - 商品、订单、库存、补货、异常 5 张表
 - 库存预警、待补货、待处理订单、异常处理 4 个关键视图
+- ERP 工作台总览仪表盘
 - `data/` mock CSV 数据目录
 
 当前能力证明：
@@ -36,7 +37,7 @@ graph TD
 - 能用公式字段和视图做基础自动判断
 - 能从 JD 反推真实岗位痛点
 
-## Stage 1：作品包装（当前）
+## Stage 1：作品包装（已完成）
 
 目标：
 
@@ -51,7 +52,7 @@ graph TD
 - ERP 工作台总览视图
 - 面试讲解 3-5 分钟版本
 
-## Stage 2：Python/Pandas 数据清洗
+## Stage 2：Python/Pandas 数据清洗（当前）
 
 目标：
 
@@ -71,6 +72,14 @@ graph TD
 - Python 数据清洗脚本
 - 清洗后的汇总数据
 - 一段说明：这个脚本解决什么业务问题
+
+当前计划：
+
+- `task-plans/05-python-pandas-data-cleaning-plan.md`
+
+当前主脚本：
+
+- `scripts/erp_data_cleaning_demo.py`
 
 ## Stage 3：RPA / 低代码流程
 

@@ -1,0 +1,5 @@
+数据表,SKU总数,缺失SKU数量,缺失SKU,检查结果
+orders.csv,5,0,,正常
+inventory.csv,10,0,,正常
+replenishment.csv,7,0,,正常
+exceptions.csv,5,0,,正常

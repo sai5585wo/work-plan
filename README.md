@@ -52,6 +52,7 @@ flowchart LR
 - 新策略转向 AI 自动化工程师求职作品集建设。
 - 已完成跨境电商 ERP 流程模拟工作台 Day 1-Day 4。
 - 已建立 `data/` mock CSV 数据目录，用于飞书导入、作品展示和后续 Python/Pandas 数据清洗练习。
+- 已启动 Python/Pandas 数据清洗 Demo，用代码复现 SKU 检查、订单汇总、库存预警、补货建议和异常汇总。
 
 ## Project Structure（项目结构）
 
@@ -68,19 +69,42 @@ work-plan/
     inventory.csv
     replenishment.csv
     exceptions.csv
+  scripts/
+    erp_data_cleaning_demo.py
+  outputs/
+    sku_check_report.csv
+    order_summary_by_sku.csv
+    order_summary_by_platform.csv
+    inventory_alert_report.csv
+    replenishment_suggestion.csv
+    exception_summary.csv
   task-plans/
     01-overall-roadmap.md
     02-3-day-feishu-workflow-practice.md
     03-erp-workflow-simulation-plan.md
     04-ai-automation-engineer-roadmap.md
+    05-python-pandas-data-cleaning-plan.md
+  requirements.txt
 ```
 
 目录说明：
 
 - `docs/`：存放招聘信息、JD 反推、作品说明和简历相关资料。
 - `data/`：存放 mock CSV 数据，用于飞书导入、作品展示和后续 Python/Pandas 练习。
+- `scripts/`：存放 Python/Pandas 数据清洗脚本。
+- `outputs/`：存放脚本生成的清洗结果和汇总报表。
 - `task-plans/`：存放长期路线、阶段计划和后续能力路线。
+- `requirements.txt`：记录当前 Python/Pandas Demo 需要的 Python 依赖。
 - `README.md`：项目入口，说明当前方向和文件结构。
+
+## Run Python/Pandas Demo（运行数据清洗 Demo）
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 scripts/erp_data_cleaning_demo.py
+```
+
+运行后会在 `outputs/` 生成 SKU 检查、订单汇总、库存预警、补货建议和异常汇总 CSV。
 
 ## Main Documents（核心文档）
 
@@ -95,6 +119,9 @@ work-plan/
 
 - [04-ai-automation-engineer-roadmap.md](task-plans/04-ai-automation-engineer-roadmap.md)  
   AI 自动化工程师能力路线图，用于管理从飞书 ERP 作品到 Python、RPA、AI 工作流的后续学习路径。
+
+- [05-python-pandas-data-cleaning-plan.md](task-plans/05-python-pandas-data-cleaning-plan.md)  
+  7 天 Python/Pandas 数据清洗计划，用于把 ERP mock CSV 转化成可运行、可讲解的数据处理作品。
 
 - [erp-workflow-portfolio.md](docs/erp-workflow-portfolio.md)  
   跨境电商 ERP 流程模拟工作台作品说明，用于求职作品集展示。
