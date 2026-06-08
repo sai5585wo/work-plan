@@ -27,15 +27,15 @@ Build a Feishu-based ERP workflow simulation for cross-border e-commerce.
 
 - [x] Day 1: Data Model and Field Design（数据模型与字段设计）
 - [x] Day 2: Product and Order Tables（商品与订单表）
-- [ ] Day 3: Inventory and Replenishment Flow（库存与补货流程，进行中）
-- [ ] Day 4: Exception Tracking and Views（异常跟踪与视图）
+- [x] Day 3: Inventory and Replenishment Flow（库存与补货流程）
+- [ ] Day 4: Exception Tracking and Views（异常跟踪与视图，下一步）
 - [ ] Day 5: Dashboard, Service Package, and Review（看板、服务包与复盘）
 
 ## Current Status（当前状态）
 
 Current stage（当前阶段）：
 
-> Day 3: Inventory and Replenishment Flow（库存与补货流程，进行中）
+> Day 4: Exception Tracking and Views（异常跟踪与视图，下一步）
 
 已完成：
 
@@ -45,6 +45,11 @@ Current stage（当前阶段）：
 - 已确认当前主线不是手动关联每条记录，而是围绕 `SKU` 做数据匹配。
 - `订单记录表` 已开始使用 `查找引用`，通过 `SKU` 从 `商品资料表` 自动带出 `引用产品名`。
 - 已明确 `关联商品` 暂时不是主线字段，可先隐藏保留；现阶段更实用的是 `SKU + 查找引用`。
+- `补货采购表` 已通过 `SKU` 查找引用 `库存表` 中的 `产品名`、`当前库存`、`安全库存`、`库存状态`。
+- `补货采购表` 已将 `缺口数量` 设置为公式字段，自动计算安全库存与当前库存之间的差额。
+- `补货采购表` 已将 `补货原因` 和 `系统建议` 设置为公式字段，用库存状态自动解释是否需要补货。
+- `补货状态` 已改为单选字段，用于人工跟踪 `待确认`、`已下单`、`运输中`、`已到货`、`已取消` 等状态。
+- 已创建 `待补货 SKU` 视图，通过 `系统建议` 和 `补货状态` 筛选真正需要处理的补货任务。
 
 当前关键理解：
 
@@ -56,9 +61,9 @@ SKU = 匹配字段，用于连接商品、订单、库存、补货和异常。
 
 下一步：
 
-- 在 `补货采购表` 中用 `SKU` 从 `库存表` 引用 `当前库存`、`安全库存`、`库存状态`。
-- 确认补货原因是否能从库存状态解释清楚。
-- 再进入 `异常记录表` 的数据录入和关键视图设计。
+- 进入 `异常记录表` 的数据录入和字段完善。
+- 先聚焦 3 类异常：`缺货异常`、`订单异常`、`商品资料缺失`。
+- 创建 `异常处理视图`，用于筛选 `待处理` 和 `处理中` 的异常记录。
 
 ## Day 1: Data Model and Field Design（数据模型与字段设计）
 
