@@ -1,21 +1,21 @@
-# Cross-Border E-Commerce AI Automation Engineer Portfolio Plan
+# Data Reporting Automation Portfolio Plan
 
-> 中文说明：这是一个面向 **AI 自动化工程师（跨境电商方向）求职** 的个人作品集计划。  
-> 当前重点不是继续包装 Listing 小工具，也不是优先卖表格整理服务，而是先用飞书多维表格复刻跨境电商业务流程，再逐步扩展到 Python 数据清洗、RPA/低代码自动化和 AI 工作流。
+> 中文说明：这是一个面向 **数据报表自动化能力建设 + AI 自动化工程师求职** 的个人作品集计划。  
+> 当前重点不是继续包装 Listing 小工具，也不是泛泛追逐“AI 自动化”，而是围绕订单、库存、补货、异常这些真实业务数据，做出可运行、可验证、可讲解的数据报表自动化作品。
 
 ## Project Goal（项目目标）
 
 长期目标：
 
-- Build AI automation engineer portfolio（建立 AI 自动化工程师作品集）
-- Understand cross-border e-commerce operations（理解跨境电商真实业务）
+- Build data reporting automation capability（建立数据报表自动化能力）
+- Use e-commerce order/inventory data as the first practice scenario（用电商订单/库存数据作为第一个练习场景）
 - Create practical ERP/data workflow simulations（做出可展示、可复用的 ERP/数据流程作品）
-- Learn Python/Pandas/RPA/AI workflow based on real business scenarios（基于真实业务场景学习 Python、Pandas、RPA 和 AI 工作流）
-- Prepare for AI automation engineer job applications（为 AI 自动化工程师岗位投递做准备）
+- Learn Python/Pandas/RPA/AI tools only through real reporting problems（围绕真实报表问题学习 Python、Pandas、RPA 和 AI 工具）
+- Prepare for AI automation engineer / data automation assistant job applications（为 AI 自动化工程师/数据自动化助理岗位投递做准备）
 
 当前阶段目标：
 
-> 做出一个更接近真实岗位需求的跨境电商 ERP 流程模拟工作台，并用招聘 JD 反推 AI 自动化工程师需要补齐的业务、表格、数据清洗和自动化能力。
+> 把已完成的跨境电商 ERP 流程模拟工作台，继续升级成“订单 / 库存 / 补货 / 异常”数据报表自动化 Demo，用 Python/Pandas 输出老板能看的报表。
 
 ## Current Portfolio Direction（当前作品方向）
 
@@ -32,6 +32,11 @@
 
 > Cross-Border ERP Workflow Simulation  
 > 跨境电商 ERP 流程模拟工作台
+
+当前主线作品：
+
+> E-Commerce Data Reporting Automation Demo  
+> 电商订单 / 库存数据报表自动化 Demo
 
 目标流程：
 
@@ -52,7 +57,7 @@ flowchart LR
 - 新策略转向 AI 自动化工程师求职作品集建设。
 - 已完成跨境电商 ERP 流程模拟工作台 Day 1-Day 4。
 - 已建立 `data/` mock CSV 数据目录，用于飞书导入、作品展示和后续 Python/Pandas 数据清洗练习。
-- 已启动 Python/Pandas 数据清洗 Demo，用代码复现 SKU 检查、订单汇总、库存预警、补货建议和异常汇总。
+- 已启动 Python/Pandas 数据报表自动化 Demo，用代码复现 SKU 检查、订单汇总、库存预警、补货建议和异常汇总。
 
 ## Project Structure（项目结构）
 
@@ -118,10 +123,10 @@ python3 scripts/erp_data_cleaning_demo.py
   5 天 ERP 流程模拟计划，用于搭建更接近 AI 自动化岗位业务场景的商品、订单、库存、补货和异常管理作品。
 
 - [04-ai-automation-engineer-roadmap.md](task-plans/04-ai-automation-engineer-roadmap.md)  
-  AI 自动化工程师能力路线图，用于管理从飞书 ERP 作品到 Python、RPA、AI 工作流的后续学习路径。
+  数据报表自动化到 AI 自动化工程师的能力路线图，用于管理从飞书 ERP 作品到 Python、RPA、AI 工作流的后续学习路径。
 
 - [05-python-pandas-data-cleaning-plan.md](task-plans/05-python-pandas-data-cleaning-plan.md)  
-  7 天 Python/Pandas 数据清洗计划，用于把 ERP mock CSV 转化成可运行、可讲解的数据处理作品。
+  7 天 Python/Pandas 数据报表自动化计划，用于把 ERP mock CSV 转化成可运行、可讲解的业务报表作品。
 
 - [erp-workflow-portfolio.md](docs/erp-workflow-portfolio.md)  
   跨境电商 ERP 流程模拟工作台作品说明，用于求职作品集展示。
@@ -144,11 +149,11 @@ python3 scripts/erp_data_cleaning_demo.py
 
 当前优先做：
 
-1. Build ERP workflow simulation（搭建 ERP 流程模拟作品）
-2. Analyze AI automation engineer job descriptions（分析 AI 自动化工程师 JD）
-3. Build Python/Pandas data cleaning demo with mock CSV（基于 mock CSV 做 Python/Pandas 数据清洗作品）
-4. Add RPA/Feishu/Coze workflow demo after business flow is clear（业务流程清楚后再加 RPA/飞书/Coze 工作流）
-5. Package a job-oriented portfolio（整理成求职作品集）
+1. Build reporting automation demo（搭建数据报表自动化 Demo）
+2. Use mock CSV to generate business reports（用 mock CSV 输出订单、库存、补货、异常报表）
+3. Explain the business problem solved by each report（讲清每张报表解决什么业务问题）
+4. Analyze job descriptions after having evidence（基于作品和投递反馈分析 JD）
+5. Add RPA/Feishu/Coze workflow only after reporting logic is stable（报表逻辑稳定后再加 RPA/飞书/Coze 工作流）
 
 ## Decision Rule（决策规则）
 
@@ -156,18 +161,18 @@ python3 scripts/erp_data_cleaning_demo.py
 
 ```mermaid
 flowchart TD
-    A["New Idea<br/>出现新想法"] --> B{"Help AI automation job entry?<br/>是否帮助 AI 自动化岗位入门？"}
+    A["New Idea<br/>出现新想法"] --> B{"Solve a real reporting/workflow problem?<br/>是否解决真实报表/流程问题？"}
     B -- "Yes 是" --> C["Do first<br/>优先做"]
     B -- "No 否" --> D{"Improve current portfolio?<br/>是否提升当前作品集？"}
     D -- "Yes 是" --> E["Add to task plan<br/>加入任务计划"]
-    D -- "No 否" --> F{"Fill a JD skill gap?<br/>是否补齐 JD 能力差距？"}
+    D -- "No 否" --> F{"Create evidence?<br/>是否能产生作品/投递/面试反馈证据？"}
     F -- "Yes 是" --> G["Small focused practice<br/>小范围练习"]
     F -- "No 否" --> H["Delay<br/>暂缓"]
 ```
 
 简单说：
 
-> 不能帮助 AI 自动化岗位入门、不能提升当前作品集、不能补齐 JD 能力差距的事情，先不做。
+> 不能解决真实问题、不能提升当前作品集、不能产生证据的事情，先不做。
 
 ## Naming Rule（文件命名规则）
 
@@ -202,7 +207,7 @@ flowchart TD
 
 每月更新：
 
-- 当前作品集是否更接近 AI 自动化工程师岗位？
+- 当前作品集是否更能证明数据报表自动化能力？
 - 是否需要开始投递或面试？
 - 是否补齐了新的 JD 能力差距？
 - 是否需要学习 Python/Pandas/RPA/Coze 等新工具？

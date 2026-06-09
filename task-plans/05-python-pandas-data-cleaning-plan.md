@@ -1,15 +1,15 @@
-# 7-Day Plan: Python Pandas Data Cleaning Demo
+# 7-Day Plan: Python Pandas Reporting Automation Demo
 
-> 中文说明：这份计划用于把已经完成的飞书 ERP 流程模拟工作台，升级为 Python/Pandas 数据清洗作品。  
+> 中文说明：这份计划用于把已经完成的飞书 ERP 流程模拟工作台，升级为 Python/Pandas 数据报表自动化作品。  
 > 每天投入：约 2-4 小时。  
 > 工具限制：本阶段只使用 Python/Pandas 和本地 CSV，不做 API、RPA、n8n、Make 或真实平台接入。  
-> 目标：用代码复现飞书工作台里的业务逻辑，形成 AI 自动化工程师作品链的第二阶段案例。
+> 目标：用代码把订单、库存、补货和异常数据整理成老板能看的报表，形成数据报表自动化主线作品。
 
 ## Goal（目标）
 
-Build a Python/Pandas data cleaning demo based on cross-border e-commerce ERP mock CSV data.
+Build a Python/Pandas reporting automation demo based on cross-border e-commerce ERP mock CSV data.
 
-中文解释：基于 `data/` 目录中的模拟数据，完成 SKU 检查、订单汇总、库存预警、补货建议和异常汇总。
+中文解释：基于 `data/` 目录中的模拟数据，完成 SKU 检查、订单汇总、库存预警、补货建议、异常清单和日报/周报雏形。
 
 完成后应具备：
 
@@ -19,6 +19,7 @@ Build a Python/Pandas data cleaning demo based on cross-border e-commerce ERP mo
 - 库存预警报表
 - 补货建议报表
 - 异常汇总报表
+- 一份自动生成的日报/周报雏形
 - 一段可用于面试讲解的作品说明
 
 ## Execution Progress（执行进度）
@@ -29,7 +30,7 @@ Build a Python/Pandas data cleaning demo based on cross-border e-commerce ERP mo
 - [ ] Day 4: Inventory Alert（库存预警）
 - [ ] Day 5: Replenishment Report（补货建议）
 - [ ] Day 6: Exception Summary（异常汇总）
-- [ ] Day 7: Portfolio Packaging（作品包装）
+- [ ] Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证）
 
 ## Current Status（当前状态）
 
@@ -41,7 +42,7 @@ Current stage（当前阶段）：
 
 - 已完成飞书 ERP 流程模拟工作台。
 - 已建立 `data/` mock CSV 数据目录。
-- 已确认下一阶段优先目标是 Python/Pandas 数据清洗。
+- 已确认下一阶段优先目标是 Python/Pandas 数据报表自动化。
 
 当前输入数据：
 
@@ -148,9 +149,9 @@ Output（产出）：
 - `outputs/exception_summary.csv`
 - `outputs/open_exceptions.csv`
 
-## Day 7: Portfolio Packaging（作品包装）
+## Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证）
 
-Focus（重点）：把脚本结果转化为可面试讲解的作品。
+Focus（重点）：把脚本结果转化为可面试讲解、可投递验证的作品。
 
 Tasks（任务）：
 
@@ -158,10 +159,11 @@ Tasks（任务）：
 - 在作品说明文档中增加 Python/Pandas 数据清洗章节。
 - 写 3-5 句面试讲解：这个脚本解决什么业务问题。
 - 更新 AI 自动化工程师路线图中的 Stage 2 状态。
+- 准备投递相关岗位时的作品说明：AI 应用助理、数据处理助理、ERP 支持、自动化助理。
 
 Output（产出）：
 
-一个可展示、可运行、可讲解的 Python/Pandas 数据清洗 Demo。
+一个可展示、可运行、可讲解的 Python/Pandas 数据报表自动化 Demo。
 
 ## Acceptance Criteria（完成标准）
 
@@ -182,4 +184,4 @@ Output（产出）：
 
 原因：
 
-> 当前目标是补齐 AI 自动化工程师作品链中的数据清洗能力，而不是提前进入复杂自动化。
+> 当前目标是验证数据报表自动化方向，而不是提前进入复杂自动化。
