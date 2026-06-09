@@ -75,6 +75,18 @@ graph TD
 - 订单汇总、库存预警、待补货、异常清单等输出报表
 - 一段说明：这些报表解决什么业务问题
 
+当前进度：
+
+- [x] 已成功运行 `scripts/erp_data_cleaning_demo.py`
+- [x] 已生成 SKU 一致性检查报表
+- [x] 已生成订单按 SKU / 平台汇总报表
+- [x] 已生成待处理 / 异常订单清单
+- [x] 已生成库存预警报表
+- [x] 已生成补货建议报表
+- [x] 已生成异常汇总和未关闭异常清单
+- [ ] 待完成 Python/Pandas 作品说明和面试讲解
+- [ ] 待准备投递岗位时的作品说明
+
 当前计划：
 
 - `task-plans/05-python-pandas-data-cleaning-plan.md`
