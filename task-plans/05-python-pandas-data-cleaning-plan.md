@@ -27,8 +27,8 @@ Build a Python/Pandas reporting automation demo based on cross-border e-commerce
 - [x] Day 1: Python Environment and CSV Reading（环境与读取 CSV，理解复盘）
 - [x] Day 2: SKU Consistency Check（SKU 一致性检查，理解复盘）
 - [x] Day 3: Order Summary（订单汇总，理解复盘）
-- [ ] Day 4: Inventory Alert（库存预警，理解复盘）
-- [ ] Day 5: Replenishment Report（补货建议，理解复盘）
+- [ ] Day 4: Inventory Alert（库存预警，理解复盘，暂停：等待家里电脑同步）
+- [ ] Day 5: Replenishment Report（补货建议，理解复盘，分支进行中）
 - [ ] Day 6: Exception Summary（异常汇总，理解复盘）
 - [ ] Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证）
 
@@ -41,7 +41,7 @@ Build a Python/Pandas reporting automation demo based on cross-border e-commerce
 
 Current stage（当前阶段）：
 
-> Day 4: Inventory Alert（库存预警，理解复盘）
+> Day 5: Replenishment Report（补货建议，理解复盘，分支进行中）
 
 已完成基础：
 
@@ -61,6 +61,8 @@ Current stage（当前阶段）：
 - 已完成 Day 1：确认 Python 可以读取 `data/` 中 5 张 CSV，并能查看字段和前 5 行数据。
 - 已完成 Day 2：确认 `products.csv` 可以作为 SKU 主表，其他 4 张表中的 SKU 都能匹配商品资料表。
 - 已完成 Day 3：用 3 个小脚本理解订单汇总、平台汇总和待处理 / 异常订单筛选。
+- Day 4：库存预警理解复盘已在家里电脑完成，但尚未成功提交到 GitHub；当前电脑暂不重复开发 Day4。
+- Day 5：在分支 `codex/day5-replenishment-paused-day4` 中继续补货建议理解复盘。
 - 后续继续保持“小步骤学习”：每一步先讲业务问题和为什么，再看对应 Python 代码。
 
 当前输入数据：
@@ -84,6 +86,7 @@ Current stage（当前阶段）：
 - `scripts/day3_order_summary_step1.py`：按 SKU 汇总总销量、总销售额和订单笔数。
 - `scripts/day3_platform_summary_step2.py`：按平台渠道汇总订单笔数、总销量和总销售额。
 - `scripts/day3_pending_exception_orders_step3.py`：筛选订单状态为待处理或异常的订单。
+- `scripts/day5_replenishment_suggestion_step1.py`：筛选需要继续跟进的补货 SKU。
 
 当前输出报表：
 
@@ -98,9 +101,9 @@ Current stage（当前阶段）：
 
 下一步：
 
-- 进入 Day 4：库存预警理解复盘。
-- 先确认业务问题：哪些 SKU 当前库存低于安全库存，哪些已经缺货。
-- 再只写一个小脚本，读取 `inventory.csv` 并筛选低库存 / 缺货 SKU。
+- 当前分支先继续 Day 5：补货建议理解复盘。
+- Day 4 暂停，等家里电脑把 Day4 成果提交到 `main` 后，再把当前 Day5 分支合并到 Day4 之后。
+- Day5 当前小目标：读取 `replenishment.csv`，筛选有缺口、系统建议补货、且未取消的补货 SKU。
 
 ## Learning Rules（学习规则）
 
@@ -284,6 +287,14 @@ Output（产出）：
 
 Focus（重点）：用代码复现库存预警逻辑。
 
+当前状态：
+
+```text
+暂停。
+Day4 成果在家里电脑本地，当前电脑不重复开发。
+等家里电脑提交并推送 Day4 后，再把 Day5 分支合并到 main。
+```
+
 业务问题：
 
 ```text
@@ -331,6 +342,12 @@ Tasks（任务）：
 Output（产出）：
 
 - `outputs/replenishment_suggestion.csv`
+
+当前分支完成记录：
+
+- 已创建 `scripts/day5_replenishment_suggestion_step1.py`。
+- 当前脚本只做一个小目标：筛选有缺口、系统建议补货、且补货状态未取消的 SKU。
+- 业务意义：把补货采购表中仍需要采购/运营继续跟进的记录筛出来。
 
 ## Day 6: Exception Summary（异常汇总）
 
