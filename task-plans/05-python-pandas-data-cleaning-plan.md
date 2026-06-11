@@ -29,7 +29,7 @@ Build a Python/Pandas reporting automation demo based on cross-border e-commerce
 - [x] Day 3: Order Summary（订单汇总，理解复盘）
 - [ ] Day 4: Inventory Alert（库存预警，理解复盘，暂停：等待家里电脑同步）
 - [x] Day 5: Replenishment Report（补货建议，理解复盘，分支完成）
-- [ ] Day 6: Exception Summary（异常汇总，理解复盘）
+- [x] Day 6: Exception Summary（异常汇总，理解复盘，分支完成）
 - [ ] Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证）
 
 说明：
@@ -41,7 +41,7 @@ Build a Python/Pandas reporting automation demo based on cross-border e-commerce
 
 Current stage（当前阶段）：
 
-> Day 6: Exception Summary（异常汇总，理解复盘，准备开始）
+> Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证，准备开始）
 
 已完成基础：
 
@@ -63,7 +63,8 @@ Current stage（当前阶段）：
 - 已完成 Day 3：用 3 个小脚本理解订单汇总、平台汇总和待处理 / 异常订单筛选。
 - Day 4：库存预警理解复盘已在家里电脑完成，但尚未成功提交到 GitHub；当前电脑暂不重复开发 Day4。
 - Day 5：在分支 `codex/day5-replenishment-paused-day4` 中完成补货建议理解复盘。
-- Day 6：准备开始异常汇总理解复盘。
+- Day 6：在当前分支中完成异常汇总理解复盘。
+- Day 7：准备整理 Python/Pandas 报表自动化作品说明和面试讲解。
 - 后续继续保持“小步骤学习”：每一步先讲业务问题和为什么，再看对应 Python 代码。
 
 当前输入数据：
@@ -103,9 +104,10 @@ Current stage（当前阶段）：
 下一步：
 
 - 当前分支已完成 Day 5：补货建议理解复盘。
+- 当前分支已完成 Day 6：异常汇总理解复盘。
 - Day 4 暂停，等家里电脑把 Day4 成果提交到 `main` 后，再把当前 Day5 分支合并到 Day4 之后。
-- 下一步开始 Day 6：异常汇总理解复盘。
-- Day6 当前小目标：先理解异常记录表要解决什么业务问题，再决定如何筛选未关闭异常。
+- 下一步开始 Day 7：作品包装与岗位验证。
+- Day7 当前小目标：把 Day1-Day6 的输入、处理、输出和业务价值整理成可面试讲解的作品说明。
 
 ## Learning Rules（学习规则）
 
@@ -395,6 +397,17 @@ Output（产出）：
 
 - `outputs/exception_summary.csv`
 - `outputs/open_exceptions.csv`
+
+当前分支完成记录：
+
+- 已创建 `scripts/day6_exception_summary.py`。
+- 已生成 `outputs/day6_exception_summary.csv`：用于查看异常类型和处理状态数量。
+- 已生成 `outputs/day6_open_exceptions.csv`：用于查看未关闭异常明细，并通过影响订单号关联订单平台和订单状态。
+- 已生成 `outputs/day6_exception_action_suggestion.csv`：用于根据异常类型给出处理建议。
+- 已理解异常报表的分工：
+  - 异常汇总表负责报警，看整体风险。
+  - 未关闭异常清单负责处理，看具体 SKU、订单和负责人。
+  - 异常处理建议表负责推进闭环，告诉负责人下一步做什么。
 
 ## Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证）
 
