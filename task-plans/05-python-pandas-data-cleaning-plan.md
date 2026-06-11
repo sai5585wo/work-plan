@@ -28,7 +28,7 @@ Build a Python/Pandas reporting automation demo based on cross-border e-commerce
 - [x] Day 2: SKU Consistency Check（SKU 一致性检查，理解复盘）
 - [x] Day 3: Order Summary（订单汇总，理解复盘）
 - [ ] Day 4: Inventory Alert（库存预警，理解复盘，暂停：等待家里电脑同步）
-- [ ] Day 5: Replenishment Report（补货建议，理解复盘，分支进行中）
+- [x] Day 5: Replenishment Report（补货建议，理解复盘，分支完成）
 - [ ] Day 6: Exception Summary（异常汇总，理解复盘）
 - [ ] Day 7: Portfolio Packaging and Job Validation（作品包装与岗位验证）
 
@@ -41,7 +41,7 @@ Build a Python/Pandas reporting automation demo based on cross-border e-commerce
 
 Current stage（当前阶段）：
 
-> Day 5: Replenishment Report（补货建议，理解复盘，分支进行中）
+> Day 6: Exception Summary（异常汇总，理解复盘，准备开始）
 
 已完成基础：
 
@@ -62,7 +62,8 @@ Current stage（当前阶段）：
 - 已完成 Day 2：确认 `products.csv` 可以作为 SKU 主表，其他 4 张表中的 SKU 都能匹配商品资料表。
 - 已完成 Day 3：用 3 个小脚本理解订单汇总、平台汇总和待处理 / 异常订单筛选。
 - Day 4：库存预警理解复盘已在家里电脑完成，但尚未成功提交到 GitHub；当前电脑暂不重复开发 Day4。
-- Day 5：在分支 `codex/day5-replenishment-paused-day4` 中继续补货建议理解复盘。
+- Day 5：在分支 `codex/day5-replenishment-paused-day4` 中完成补货建议理解复盘。
+- Day 6：准备开始异常汇总理解复盘。
 - 后续继续保持“小步骤学习”：每一步先讲业务问题和为什么，再看对应 Python 代码。
 
 当前输入数据：
@@ -101,9 +102,10 @@ Current stage（当前阶段）：
 
 下一步：
 
-- 当前分支先继续 Day 5：补货建议理解复盘。
+- 当前分支已完成 Day 5：补货建议理解复盘。
 - Day 4 暂停，等家里电脑把 Day4 成果提交到 `main` 后，再把当前 Day5 分支合并到 Day4 之后。
-- Day5 当前小目标：读取 `replenishment.csv`，筛选有缺口、系统建议补货、且未取消的补货 SKU。
+- 下一步开始 Day 6：异常汇总理解复盘。
+- Day6 当前小目标：先理解异常记录表要解决什么业务问题，再决定如何筛选未关闭异常。
 
 ## Learning Rules（学习规则）
 
@@ -345,9 +347,25 @@ Output（产出）：
 
 当前分支完成记录：
 
-- 已创建 `scripts/day5_replenishment_suggestion_step1.py`。
-- 当前脚本只做一个小目标：筛选有缺口、系统建议补货、且补货状态未取消的 SKU。
-- 业务意义：把补货采购表中仍需要采购/运营继续跟进的记录筛出来。
+- 已保留一个统一 Day5 学习脚本：`scripts/day5_replenishment_suggestion_step1.py`。
+- 后续 Day5 功能都在这个脚本里逐步补充，不再新建多个 `step2` / `step3` 脚本。
+- 当前统一脚本已包含：
+  - 查看补货采购表字段和前 5 行。
+  - 重新计算缺口数量，并校验原缺口数量是否可靠。
+  - 筛选有缺口、系统建议补货、且补货状态未取消的补货任务。
+- 当前已导出：
+  - `outputs/day5_replenishment_gap_check.csv`
+  - `outputs/day5_replenishment_followup.csv`
+  - `outputs/day5_replenishment_suggestion.csv`
+- Day5 业务产出已经完成：从补货采购表筛选待跟进补货 SKU，关联商品资料表带出供应商和成本，并计算预计补货成本。
+
+下一小步：
+
+- 进入 Day6 前，先讲清楚异常记录表的业务作用：
+  - 哪些异常还没处理？
+  - 这些异常影响哪些订单？
+  - 为什么要保留影响订单号？
+  - 异常汇总给谁看、用来推动什么动作？
 
 ## Day 6: Exception Summary（异常汇总）
 
